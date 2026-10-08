@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000000;">
+        Your browser does not support the canvas tag.
+    </canvas>>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "red";            // rectangle
+        ctx.fillRect(20, 20, 120, 60);
+ 
+    ctx.beginPath();                  // line
+    ctx.moveTo(160, 20);
+    ctx.lineTo(380, 80);
+    ctx.stroke();
+ 
+    ctx.beginPath();                  // circle
+    ctx.arc(80, 140, 40, 0, 2 * Math.PI);
+    ctx.fillStyle = "blue";
+    ctx.fill();
+ 
+    ctx.font = "24px Arial";          // text
+    ctx.fillStyle = "black";
+    ctx.fillText("Hello Canvas", 200, 150);
+
+
+    </script>
+</body>
+</html>
