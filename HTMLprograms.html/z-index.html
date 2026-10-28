@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Z-Index Example</title>
+    <style>
+        div {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+        .green {
+            background-color: green;
+            top: 40px; 
+            left: 40px;
+            z-index: 3;
+        }
+        .orange {
+            background-color: orange;
+            top: 80px;
+            left: 80px;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <h2>Z-Index Demonstration</h2>
+    <div class="green">Green(z:3)</div>
+    <div class="orange">Orange(z:5)</div>
+</body>
+</html>
